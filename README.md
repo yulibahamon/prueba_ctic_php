@@ -1,5 +1,5 @@
 
-# Sistema de Citas Médicas Universitario
+# Sistema de Citas Médicas Universitario.
 
 ## Descripción
 Sistema web para gestionar citas médicas de estudiantes, con categorías general, odontológica y psicológica.
@@ -23,6 +23,29 @@ Sistema web para gestionar citas médicas de estudiantes, con categorías genera
 2. Ejecutar scripts SQL del archivo `scripsDB/`
 
 ### Backend (Laravel)
+1. Cambia el nombre del archivo .env.example a
+```bash
+  .env
+   ```
+2. Edita el archivo .env en la seccion
+```bash
+    DB_CONNECTION=sqlite
+  # DB_HOST=127.0.0.1
+  # DB_PORT=3306
+  # DB_DATABASE=laravel
+  # DB_USERNAME=root
+  # DB_PASSWORD=
+   ```
+  Modificalo con tus datos, ejemplo:
+```bash
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=sistema_citas
+    DB_USERNAME=root
+    DB_PASSWORD=
+   ```
+4. Corre los siguientes comando
 ```bash
 composer install
 cp .env.example .env
