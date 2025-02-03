@@ -1,5 +1,5 @@
 
-# Sistema de Citas Médicas Universitario
+# Sistema de Citas Médicas Universitario.
 
 ## Descripción
 Sistema web para gestionar citas médicas de estudiantes, con categorías general, odontológica y psicológica.
