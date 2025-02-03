@@ -1,3 +1,5 @@
+USE sistema_citas;
+
 CREATE TABLE estudiante (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(100) NOT NULL,
