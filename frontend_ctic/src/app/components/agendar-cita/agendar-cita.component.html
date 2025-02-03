@@ -1,0 +1,17 @@
+<form [formGroup]="citaForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <input matInput placeholder="ID del Estudiante" formControlName="estudiante_id">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="ID del Médico" formControlName="medico_id">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Fecha" formControlName="fecha">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Hora" formControlName="hora">
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Agendar Cita</button>
+</form>

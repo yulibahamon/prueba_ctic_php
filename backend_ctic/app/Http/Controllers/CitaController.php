@@ -16,8 +16,8 @@ class CitaController extends Controller
     {
         
         $validator = Validator::make($request->all(), [
-            'estudiante_id' => 'required|exists:estudiantes,id',
-            'medico_id' => 'required|exists:medicos,id',
+            'estudiante_id' => 'required|exists:estudiante,id',
+            'medico_id' => 'required|exists:medico,id',
             'fecha' => 'required|date|after:today',
             'hora' => 'required|date_format:H:i',
         ]);

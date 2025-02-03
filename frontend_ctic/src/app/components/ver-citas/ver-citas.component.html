@@ -1,0 +1,24 @@
+<table mat-table [dataSource]="citas">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>ID</th>
+      <td mat-cell *matCellDef="let cita">{{ cita.id }}</td>
+    </ng-container>
+    <ng-container matColumnDef="medico">
+      <th mat-header-cell *matHeaderCellDef>Médico</th>
+      <td mat-cell *matCellDef="let cita">{{ cita.medico.nombre }}</td>
+    </ng-container>
+    <ng-container matColumnDef="fecha">
+      <th mat-header-cell *matHeaderCellDef>Fecha</th>
+      <td mat-cell *matCellDef="let cita">{{ cita.fecha }}</td>
+    </ng-container>
+    <ng-container matColumnDef="hora">
+      <th mat-header-cell *matHeaderCellDef>Hora</th>
+      <td mat-cell *matCellDef="let cita">{{ cita.hora }}</td>
+    </ng-container>
+    <ng-container matColumnDef="estado">
+      <th mat-header-cell *matHeaderCellDef>Estado</th>
+      <td mat-cell *matCellDef="let cita">{{ cita.estado }}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="['id', 'medico', 'fecha', 'hora', 'estado']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['id', 'medico', 'fecha', 'hora', 'estado'];"></tr>
+</table>
