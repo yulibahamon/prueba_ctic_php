@@ -50,7 +50,6 @@ class CitaController extends Controller
         $cita = Cita::findOrFail($citaId);
         $cita->estado = 'cancelada';
         $cita->save();
-
         return response()->json(['mensaje' => 'Cita cancelada exitosamente']);
     }
 }
